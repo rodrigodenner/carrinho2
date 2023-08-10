@@ -1,0 +1,15 @@
+{
+    "name": "rodrigo/carrinho_2.0",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rodrigo Denner",
+            "email": "109491106+rodrigodenner@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
