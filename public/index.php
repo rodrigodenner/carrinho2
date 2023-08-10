@@ -1,25 +1,21 @@
 <?php
-session_start();
-
-require "../vendor/autoload.php";
 use app\classes\Cart;
-use app\classes\CartProducts;
 use app\database\models\Read;
 
-$read = new Read;
+session_start();
 
+require '../vendor/autoload.php';
 
+// $products = require '../app/helpers/products.php';
 
 $cart = new Cart;
-// $products = require "../app/helpers/products.php";
-$productsInCart = $cart->cart();
+
+$read = new Read;
 $products = $read->all('products');
-// alterando a quantidade de produtos 
-// $cart->quantity(3,0);
+
 // $cart->dump();
 
-
-
+$productsInCart = $cart->cart();
 ?>
 
 <!DOCTYPE html>
